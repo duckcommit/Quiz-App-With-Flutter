@@ -5,7 +5,10 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: StartScreen(),
+        body: Container(
+          decoration: const BoxDecoration(color: Colors.deepPurple),
+          child: const StartScreen(),
+        ),
       ),
     ),
   );
