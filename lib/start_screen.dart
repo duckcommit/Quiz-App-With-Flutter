@@ -24,10 +24,11 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
-          OutlinedButton(
+          OutlinedButton.icon(
             onPressed: () {},
             style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-            child: const Text("Play"),
+            icon: const Icon(Icons.arrow_right_alt_outlined),
+            label: const Text("Play"),
           )
         ],
       ),
