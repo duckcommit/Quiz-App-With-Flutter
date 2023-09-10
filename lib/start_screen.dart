@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  StartScreen({super.key});
+  const StartScreen({super.key});
 
   @override
   Widget build(context) {
-    return const Center(
-      child: Column(children: [
-        Image(image: 'assets/images/quiz-logo.png')
-      ],),
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset('assets/images/quiz-logo.png',width: 300,),
+          SizedBox(height: 80,),
+          Text('Learn Flutter the fun way.')
+        ],
+      ),
     );
   }
 }
