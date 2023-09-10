@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runapp(MaterialApp())
+  runApp(MaterialApp(home: Scaffold(body: ),),);
 }
