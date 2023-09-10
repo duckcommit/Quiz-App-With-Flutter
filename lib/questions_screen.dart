@@ -5,7 +5,7 @@ class QuestionScreen extends StatefulWidget{
 
   @override
   State<QuestionScreen> createState() {
-    return _QuestionScreen()
+    return _QuestionScreen();
   }
 }
 
