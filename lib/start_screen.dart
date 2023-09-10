@@ -7,5 +7,4 @@ class StartScreen extends StatelessWidget{
   Widget build(context){
     return const Text("Start Screen");
   }
-
 }
