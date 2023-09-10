@@ -4,7 +4,7 @@ import 'package:quizapp/start_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
-  
+
   @override
   State<Quiz> createState() {
     return _QuizState();
@@ -12,13 +12,13 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget activeScreen = const StartScreen();
+  Widget activeScreen = const StartScreen(switchScreen);
 
-void switchScreen(){
-  setState(() {
-    activeScreen = const QuestionScreen();
-  });
-}
+  void switchScreen() {
+    setState(() {
+      activeScreen = const QuestionScreen();
+    });
+  }
 
   @override
   Widget build(context) {
@@ -26,7 +26,7 @@ void switchScreen(){
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(color: Colors.deepPurple),
-          child: const StartScreen(),
+          child: activeScreen,
         ),
       ),
     );
