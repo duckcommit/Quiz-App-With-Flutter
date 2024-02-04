@@ -25,7 +25,7 @@ class _QuizState extends State<Quiz> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: const BoxDecoration(color: Colors.deepPurple),
+          decoration: const BoxDecoration(color: Colors.red),
           child: activeScreen,
         ),
       ),
